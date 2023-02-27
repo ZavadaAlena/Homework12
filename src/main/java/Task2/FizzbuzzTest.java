@@ -15,6 +15,7 @@ public class FizzbuzzTest {
         executorService.submit(fizzbuzz::buzz);
         executorService.submit(fizzbuzz::fizzbuzz);
         executorService.submit(fizzbuzz::getNumber);
+        executorService.shutdown();
 
 
     }
